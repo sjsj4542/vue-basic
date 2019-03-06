@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			<p>姓名：{{name}}</p>
+			<input type="text" v-bind:value="description" />
+			<a v-bind:href="url">{{website}}</a>
+		</div>
+		<script type="text/javascript">
+			var app=new Vue({
+				el:'#app',
+				data:{
+					name:'123',
+					description:'vue的创立者',
+					Website:'vue.js官网',
+					url:'',
+					avatar:''
+				}
+			})
+		</script>
+	</body>
+</html>
